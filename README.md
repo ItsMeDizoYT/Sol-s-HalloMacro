@@ -1,4 +1,4 @@
-# 🌟 Sol's Popper Macro v4.0 🌟
+# 🌟 Sol's RNG Hallow-Potion Popper Macro v4.0 🌟
 
 **Automate your Sol's Popper gameplay like a pro!**  
 Take control of potions, biomes, and Discord notifications — all in one sleek, fully-featured macro.
