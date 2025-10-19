@@ -26,8 +26,7 @@ running = False
 last_detected_biome = None
 last_biome_time = {"Pumpkin Moon":0, "Graveyard":0}
 
-WEBHOOK_URL = "YOUR_WEBHOOK_HERE"
-
+WEBHOOK_URL = "https://discord.com/api/webhooks/1361918380998660177/5K3ntB8GqZ8K1PDFWVzTKN3SkbZRMTj_EQn76QYYrrm6gc4-hY64SXa7dGQhobf4n2Z6"
 
 # ----------------- Tabs -----------------
 tab_control = ttk.Notebook(root)
@@ -295,11 +294,11 @@ def macro_loop():
 
         elif not detected:
             last_detected_biome = None
-            # Middle screen jump every 2s instead of click
+            # Middle screen click every 2s
             if mid and time.time()-last_middle_click>2:
                 x,y = center(mid)
                 pydirectinput.moveTo(x,y)
-                pydirectinput.press('space')  # jump instead of click
+                pydirectinput.click(x,y)
                 last_middle_click = time.time()
         if not running: return
 
